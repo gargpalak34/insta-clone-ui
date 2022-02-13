@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Averia Gruesa Libre';
+  color: #262626;
+}
+
+:root {
+  --grey: #fafafa;
+  --grey-dark: #dbdbdb;
+  --grey-darker: #8e8e8e;
+  --blue: #0095f6;
+  --blue-darker: #00376b;
+  --black: #262626;
+
+  --base: 16px;
+  --head1: 28px;
+  --head2: 16px;
+}
+
+body{
+  background-color: var(--grey) ;
+}
+
+.hoverable:hover{
+  cursor: pointer;
+}
+/* Navbar Settings  */
+
+.navbar{
+  border-bottom: 2px solid var(--grey-dark);
+  background-color: #ffffff;
+  padding: 10px 2px 2px;
+}
+
+.flex-container-nav{
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-list li{
+  display: inline-block;
+}
+
+#logo img{
+  height: 2rem;
+}
+
+.horizontal-list li img{
+  height: 1.2rem;
+  margin: 0px 0.5rem;
+}
+
+#search input{
+  height: 2rem;
+  width: 15vw;
+  padding-left: 1.5rem;
+  position: relative;
+  bottom: 3px;
+  border: 2px solid var(--grey-dark);
+  border-radius: 4px;
+  color: var(--grey-dark);
+  background-color: var(--grey);
+}
+
+main{
+  max-width: 940px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bio Section */
+
+#profile-photo{
+  margin-left: 18%;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-header-section .flex-container{
+  margin-top: 2rem;
+}
+
+.profile-header-section .flex-item2 button{  
+  background-color: var(--blue);
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  padding: 6px 24px;
+}
+
+.flex-item2 a{
+  text-decoration: none;
+  color: var(--blue);
+}
+
+/* Stories Section */
+
+.stories-section{
+  padding: 0 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  justify-content: space-around;
+}
+
+.stories-section .flex-item{
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.stories-section .flex-item img{
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--grey-darker);
+}
+
+
+/* Photo Button Area */
+
+.content-menu-tabs{
+  text-align: center;
+}
+
+.content-menu-tabs div{
+  display: inline-block;
+  line-height: 3rem;
+}
+
+.head-image-button{
+  margin: 0 2rem;
+}
+
+#tagged-button{
+  color: var(--grey-darker);
+}
+
+#posts-button{
+  font-weight: 800;
+  border-top: 2px solid black;
+}
+
+/* Grid Area*/
+
+.photo-grid-container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item img{
+  width: 100%;
+  height: auto;
+}
